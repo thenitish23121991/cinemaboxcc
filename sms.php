@@ -35,38 +35,18 @@ $video = $_GET['video'];
 <div class="movie_content_container">
 
 <div class="payment_container">
-Payment Options
+Pay using Credit Card
 </div>
 
 <div class="payment_list_container">
-<ol class="payment_list">
-<li>Pay Rs.50 in cash</li>
-<li>SMS "watch 1" to XXX and Rs.50 will be charged through your mobile operator</li>
-</ol>
+<ul class="payment_list">
+<form action="video1.php?video=2 states" method="post">
+<li class="credit_card_list"><input type="text" name="credit_card_field" class="credit_card_field" pattern="[0-9]{13-16}" /></li>
+<li class="credit_card_list"><input type="submit" name="credit_card_submit_field" class="credit_card_submit_field" value="Submit" /></li>
+</form>
+</ul>
 </div>
 
-<div class="payment_start_container">
-<div class="start_head">
-<div class="start_head_start">
-To start watching enter
-</div>
-<form action="video1.php?video=2 states" method="post">
-<ul>
-<li>
-<label>Mobile Number</label>
-<input type="text" name="mobile_text" class="mobile_text" />
-</li>
-<li>
-<label>Code</label>
-<input type="password" name="code_text" class="code_text" />
-</li>
-<li>
-<input type="submit" name="list_submit" class="list_submit" value="Submit" />
-</li>
-</ul>
-</form>
-</div>
-</div>
 
 </div>
 </div>
